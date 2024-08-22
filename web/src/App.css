@@ -2,15 +2,17 @@
 .app-container {
   display: flex;
   min-height: 100vh;
+  position: fixed;
 }
 
 /* Sidebar styles */
 .sidebar {
   width: 20%;
-  background-color: #333;
+  background-color: #e94c4c;
   color: white;
   padding: 20px;
   transition: transform 0.3s ease-in-out;
+  display: none;
 }
 
 /* Sidebar items */
@@ -30,6 +32,7 @@
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 3rem;
   justify-content: space-between;
 }
 
@@ -39,6 +42,12 @@
   margin: 10px;
   flex: 1 1 calc(33% - 20px);
   box-sizing: border-box;
+}
+
+.leftnav{
+  border: 1px solid red;
+  height: 82rem;
+  padding: 1rem;
 }
 
 /* Responsive design for sidebar and content */
@@ -62,7 +71,7 @@
     width: 100%;
   }
 
-  .toggle-sidebar-btn {
+  .leftnav {
     display: block;
     position: fixed;
     top: 20px;
@@ -71,7 +80,7 @@
     color: white;
     padding: 10px 15px;
     font-size: 18px;
-    border: none;
+    border: 1px sold red;
     cursor: pointer;
     z-index: 1000;
   }

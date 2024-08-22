@@ -12,9 +12,20 @@ const App = () => {
   return (
     <div className="app-container">
       {/* This is the toggle button for mobile screens */}
-      <button className="toggle-sidebar-btn" onClick={toggleSidebar}>
-        ☰
-      </button>
+
+      <div className='leftnav'>
+        <button className="toggle-sidebar-btn" onClick={toggleSidebar}>
+          ☰
+        </button>
+        <div className='contact'>
+        </div>
+       
+      </div>
+      <div className='topnav'>
+          <div className='link'>
+            <h1>logo</h1>
+          </div>
+        </div>
 
       {/* Sidebar Section */}
       <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
@@ -29,7 +40,7 @@ const App = () => {
       {/* Main Content Section */}
       <div className="main-content">
         <div className="content-item">
-          
+
         </div>
         <div className="content-item">Content Block 2</div>
         <div className="content-item">Content Block 3</div>
